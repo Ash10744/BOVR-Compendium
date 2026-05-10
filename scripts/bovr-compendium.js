@@ -1,20 +1,20 @@
 /**
  * BOVR Compendium Module
  *
- * Folder structure:
- *
- * BOVR Compendiums                         (#8B0000  deep red)
- * ├── BOVR - DND5e                         (#7b2d00  burnt orange)
- * │   ├── BOVR - DND5E - Importer          (#1a3a6b  navy)
- * │   ├── BOVR - DND5e - Homebrew          (#4b0082  indigo)
- * │   ├── BOVR - DND5e - Aetherial Expanse (#006080  teal)
- * │   └── BOVR - DND5e - Grim Hollow       (#2d0a0a  dark red)
- * └── BOVR - Pathfinder                    (#5a3000  brown)
- *     └── BOVR - Pathfinder - Kingmaker    (#5a3000  brown)
+ * Target structure:
+ * BOVR Compendiums
+ * ├── BOVR - DND5e
+ * │   ├── BOVR - DND5E - Importer
+ * │   ├── BOVR - DND5e - Homebrew
+ * │   ├── BOVR - DND5e - Aetherial Expanse
+ * │   └── BOVR - DND5e - Grim Hollow
+ * └── BOVR - Pathfinder
+ *     └── BOVR - Pathfinder - Kingmaker
  */
 
 const MODULE_ID = "bovr-compendium";
 
+// Defined in order: parents before children
 const FOLDER_TREE = [
   {
     name: "BOVR Compendiums",
@@ -43,27 +43,19 @@ const FOLDER_TREE = [
     name: "BOVR - DND5e - Homebrew",
     color: "#4b0082",
     parent: "BOVR - DND5e",
-    packs: [
-      "hb-custom-class-features",
-      "hb-custom-classes",
-      "hb-custom-subclasses"
-    ]
+    packs: ["hb-custom-class-features", "hb-custom-classes", "hb-custom-subclasses"]
   },
   {
     name: "BOVR - DND5e - Aetherial Expanse",
     color: "#006080",
     parent: "BOVR - DND5e",
-    packs: [
-      "ae-scenes", "ae-npcs", "ae-monsters", "ae-custom-items"
-    ]
+    packs: ["ae-scenes", "ae-npcs", "ae-monsters", "ae-custom-items"]
   },
   {
     name: "BOVR - DND5e - Grim Hollow",
     color: "#2d0a0a",
     parent: "BOVR - DND5e",
-    packs: [
-      "gh-monsters", "gh-scenes", "gh-npcs", "gh-custom-items"
-    ]
+    packs: ["gh-monsters", "gh-scenes", "gh-npcs", "gh-custom-items"]
   },
   {
     name: "BOVR - Pathfinder",
@@ -75,9 +67,7 @@ const FOLDER_TREE = [
     name: "BOVR - Pathfinder - Kingmaker",
     color: "#5a3000",
     parent: "BOVR - Pathfinder",
-    packs: [
-      "km-scenes", "km-npcs", "km-monsters", "km-custom-items"
-    ]
+    packs: ["km-scenes", "km-npcs", "km-monsters", "km-custom-items"]
   }
 ];
 
@@ -93,20 +83,21 @@ Hooks.on("renderCompendiumDirectory", async () => {
 });
 
 async function buildFolderTree() {
+  // folderMap tracks created/found folders by name so children can reference parents
   const folderMap = {};
 
   for (const def of FOLDER_TREE) {
     const parentFolder = def.parent ? folderMap[def.parent] ?? null : null;
 
-    let folder = game.folders.find(
-      (f) =>
-        f.type === "Compendium" &&
-        f.name === def.name &&
-        (f.folder?.id ?? null) === (parentFolder?.id ?? null)
+    // Search by name AND parent id so we don't mix up same-named folders
+    let folder = game.folders.find(f =>
+      f.type === "Compendium" &&
+      f.name === def.name &&
+      (f.folder?.id ?? null) === (parentFolder?.id ?? null)
     );
 
     if (!folder) {
-      console.log(`${MODULE_ID} | Creating folder: "${def.name}"`);
+      console.log(`${MODULE_ID} | Creating: "${def.name}" (parent: ${def.parent ?? "none"})`);
       folder = await CompendiumFolder.create({
         name: def.name,
         type: "Compendium",
@@ -114,21 +105,26 @@ async function buildFolderTree() {
         sorting: "a",
         folder: parentFolder?.id ?? null
       });
+    } else if ((folder.folder?.id ?? null) !== (parentFolder?.id ?? null)) {
+      // Folder exists but is in the wrong place — move it
+      console.log(`${MODULE_ID} | Moving folder "${def.name}" to correct parent`);
+      await folder.update({ folder: parentFolder?.id ?? null });
     }
 
     folderMap[def.name] = folder;
 
+    // Assign packs into this folder
     for (const packName of def.packs) {
       const pack = game.packs.get(`${MODULE_ID}.${packName}`);
       if (!pack) {
-        console.warn(`${MODULE_ID} | Pack not found: ${MODULE_ID}.${packName}`);
+        console.warn(`${MODULE_ID} | Pack not found: ${packName}`);
         continue;
       }
       if (pack.folder?.id === folder.id) continue;
-      console.log(`${MODULE_ID} | Moving "${pack.metadata.label}" -> "${def.name}"`);
+      console.log(`${MODULE_ID} | Moving pack "${pack.metadata.label}" -> "${def.name}"`);
       await pack.configure({ folder: folder.id });
     }
   }
 
-  console.log(`${MODULE_ID} | Folder tree complete.`);
+  console.log(`${MODULE_ID} | Done.`);
 }
