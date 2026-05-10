@@ -21,6 +21,7 @@
       "label": "[BOVR-DDBI-DND5e] Monsters",
       "path": "packs/ddbi-monsters",
       "type": "Actor",
+      "system": "dnd5e",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
     {
@@ -28,6 +29,7 @@
       "label": "[BOVR-DDBI-DND5e] Spells",
       "path": "packs/ddbi-spells",
       "type": "Item",
+      "system": "dnd5e",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
     {
@@ -35,6 +37,7 @@
       "label": "[BOVR-DDBI-DND5e] Classes",
       "path": "packs/ddbi-classes",
       "type": "Item",
+      "system": "dnd5e",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
     {
@@ -42,6 +45,7 @@
       "label": "[BOVR-DDBI-DND5e] Subclasses",
       "path": "packs/ddbi-subclasses",
       "type": "Item",
+      "system": "dnd5e",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
     {
@@ -49,6 +53,7 @@
       "label": "[BOVR-DDBI-DND5e] Class Features",
       "path": "packs/ddbi-class-features",
       "type": "Item",
+      "system": "dnd5e",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
     {
@@ -56,6 +61,7 @@
       "label": "[BOVR-DDBI-DND5e] Races",
       "path": "packs/ddbi-races",
       "type": "Item",
+      "system": "dnd5e",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
     {
@@ -63,6 +69,7 @@
       "label": "[BOVR-DDBI-DND5e] Racial Traits",
       "path": "packs/ddbi-racial-traits",
       "type": "Item",
+      "system": "dnd5e",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
     {
@@ -70,6 +77,7 @@
       "label": "[BOVR-DDBI-DND5e] Feats",
       "path": "packs/ddbi-feats",
       "type": "Item",
+      "system": "dnd5e",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
     {
@@ -77,6 +85,7 @@
       "label": "[BOVR-DDBI-DND5e] Backgrounds",
       "path": "packs/ddbi-backgrounds",
       "type": "Item",
+      "system": "dnd5e",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
     {
@@ -84,6 +93,7 @@
       "label": "[BOVR-DDBI-DND5e] Items",
       "path": "packs/ddbi-items",
       "type": "Item",
+      "system": "dnd5e",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
     {
@@ -91,6 +101,7 @@
       "label": "[BOVR-DDBI-DND5e] Vehicles",
       "path": "packs/ddbi-vehicles",
       "type": "Actor",
+      "system": "dnd5e",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
     {
@@ -112,6 +123,7 @@
       "label": "[BOVR-DDBI-DND5e] Override",
       "path": "packs/ddbi-override",
       "type": "Item",
+      "system": "dnd5e",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
     {
@@ -119,6 +131,7 @@
       "label": "[BOVR-HB-DND5e] Custom Class Features",
       "path": "packs/hb-custom-class-features",
       "type": "Item",
+      "system": "dnd5e",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
     {
@@ -126,6 +139,7 @@
       "label": "[BOVR-HB-DND5e] Custom Classes",
       "path": "packs/hb-custom-classes",
       "type": "Item",
+      "system": "dnd5e",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
     {
@@ -133,6 +147,7 @@
       "label": "[BOVR-HB-DND5e] Custom Subclasses",
       "path": "packs/hb-custom-subclasses",
       "type": "Item",
+      "system": "dnd5e",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
     {
@@ -147,6 +162,7 @@
       "label": "[BOVR-AE-DND5e] NPCs",
       "path": "packs/ae-npcs",
       "type": "Actor",
+      "system": "dnd5e",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
     {
@@ -154,6 +170,7 @@
       "label": "[BOVR-AE-DND5e] Monsters",
       "path": "packs/ae-monsters",
       "type": "Actor",
+      "system": "dnd5e",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
     {
@@ -161,6 +178,7 @@
       "label": "[BOVR-AE-DND5e] Custom Items",
       "path": "packs/ae-custom-items",
       "type": "Item",
+      "system": "dnd5e",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
     {
@@ -175,6 +193,7 @@
       "label": "[BOVR-KM-Pathfinder] NPCs",
       "path": "packs/km-npcs",
       "type": "Actor",
+      "system": "pf2e",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
     {
@@ -182,6 +201,7 @@
       "label": "[BOVR-KM-Pathfinder] Monsters",
       "path": "packs/km-monsters",
       "type": "Actor",
+      "system": "pf2e",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
     {
@@ -189,6 +209,7 @@
       "label": "[BOVR-KM-Pathfinder] Custom Items",
       "path": "packs/km-custom-items",
       "type": "Item",
+      "system": "pf2e",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     }
   ],
