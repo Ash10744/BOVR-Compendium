@@ -16,8 +16,6 @@
     "scripts/bovr-compendium.js"
   ],
   "packs": [
-
-    // ── BOVR - DND5E - Importer ──────────────────────────────────────────────
     {
       "name": "ddbi-monsters",
       "label": "[BOVR-DDBI-DND5e] Monsters",
@@ -116,8 +114,6 @@
       "type": "Item",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
-
-    // ── BOVR - DND5e - Homebrew ──────────────────────────────────────────────
     {
       "name": "hb-custom-class-features",
       "label": "[BOVR-HB-DND5e] Custom Class Features",
@@ -139,8 +135,6 @@
       "type": "Item",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
-
-    // ── BOVR - DND5e - Aetherial Expanse ────────────────────────────────────
     {
       "name": "ae-scenes",
       "label": "[BOVR-AE-DND5e] Scenes",
@@ -169,8 +163,6 @@
       "type": "Item",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     },
-
-    // ── BOVR - Pathfinder - Kingmaker ────────────────────────────────────────
     {
       "name": "km-scenes",
       "label": "[BOVR-KM-Pathfinder] Scenes",
@@ -199,9 +191,7 @@
       "type": "Item",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     }
-
   ],
-
   "packFolders": [
     {
       "name": "BOVR Compendiums",
@@ -264,6 +254,5 @@
       ]
     }
   ],
-
   "flags": {}
 }
