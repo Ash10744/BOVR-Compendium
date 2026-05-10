@@ -14,7 +14,6 @@
 
 const MODULE_ID = "bovr-compendium";
 
-// Defined in order: parents before children
 const FOLDER_TREE = [
   {
     name: "BOVR Compendiums",
@@ -83,37 +82,42 @@ Hooks.on("renderCompendiumDirectory", async () => {
 });
 
 async function buildFolderTree() {
-  // folderMap tracks created/found folders by name so children can reference parents
   const folderMap = {};
 
+  // Pass 1: create any missing folders (all at root for now)
   for (const def of FOLDER_TREE) {
-    const parentFolder = def.parent ? folderMap[def.parent] ?? null : null;
-
-    // Search by name AND parent id so we don't mix up same-named folders
     let folder = game.folders.find(f =>
-      f.type === "Compendium" &&
-      f.name === def.name &&
-      (f.folder?.id ?? null) === (parentFolder?.id ?? null)
+      f.type === "Compendium" && f.name === def.name
     );
-
     if (!folder) {
-      console.log(`${MODULE_ID} | Creating: "${def.name}" (parent: ${def.parent ?? "none"})`);
+      console.log(`${MODULE_ID} | Creating folder: "${def.name}"`);
       folder = await CompendiumFolder.create({
         name: def.name,
         type: "Compendium",
         color: def.color,
         sorting: "a",
-        folder: parentFolder?.id ?? null
+        folder: null
       });
-    } else if ((folder.folder?.id ?? null) !== (parentFolder?.id ?? null)) {
-      // Folder exists but is in the wrong place — move it
-      console.log(`${MODULE_ID} | Moving folder "${def.name}" to correct parent`);
-      await folder.update({ folder: parentFolder?.id ?? null });
     }
-
     folderMap[def.name] = folder;
+  }
 
-    // Assign packs into this folder
+  // Pass 2: set correct parent on every folder that needs one
+  for (const def of FOLDER_TREE) {
+    if (!def.parent) continue;
+    const folder = folderMap[def.name];
+    const parentFolder = folderMap[def.parent];
+    if (!parentFolder) continue;
+    if ((folder.folder?.id ?? null) !== parentFolder.id) {
+      console.log(`${MODULE_ID} | Nesting "${def.name}" under "${def.parent}"`);
+      await folder.update({ folder: parentFolder.id });
+    }
+  }
+
+  // Pass 3: assign packs to their folders
+  for (const def of FOLDER_TREE) {
+    if (!def.packs.length) continue;
+    const folder = folderMap[def.name];
     for (const packName of def.packs) {
       const pack = game.packs.get(`${MODULE_ID}.${packName}`);
       if (!pack) {
