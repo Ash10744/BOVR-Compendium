@@ -2,7 +2,7 @@
   "id": "bovr-compendium",
   "title": "BOVR Compendiums",
   "description": "BOVR shared compendium module. All packs are automatically organised under the BOVR Compendiums folder tree.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "compatibility": {
     "minimum": "11",
     "verified": "13"
@@ -286,6 +286,49 @@
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "name": "gh-monsters",
+      "label": "[BOVR-GH-DND5e] Monsters",
+      "path": "packs/gh-monsters",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "gh-scenes",
+      "label": "[BOVR-GH-DND5e] Scenes",
+      "path": "packs/gh-scenes",
+      "type": "Scene",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "gh-npcs",
+      "label": "[BOVR-GH-DND5e] NPCs",
+      "path": "packs/gh-npcs",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "gh-custom-items",
+      "label": "[BOVR-GH-DND5e] Custom Items",
+      "path": "packs/gh-custom-items",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "packFolders": [
@@ -295,56 +338,81 @@
       "color": "#8B0000",
       "folders": [
         {
-          "name": "BOVR - DND5E - Importer",
+          "name": "BOVR - DND5e",
           "sorting": "a",
-          "color": "#1a3a6b",
-          "packs": [
-            "ddbi-monsters",
-            "ddbi-spells",
-            "ddbi-classes",
-            "ddbi-subclasses",
-            "ddbi-class-features",
-            "ddbi-races",
-            "ddbi-racial-traits",
-            "ddbi-feats",
-            "ddbi-backgrounds",
-            "ddbi-items",
-            "ddbi-vehicles",
-            "ddbi-tables",
-            "ddbi-adventures",
-            "ddbi-override"
+          "color": "#7b2d00",
+          "folders": [
+            {
+              "name": "BOVR - DND5E - Importer",
+              "sorting": "a",
+              "color": "#1a3a6b",
+              "packs": [
+                "ddbi-monsters",
+                "ddbi-spells",
+                "ddbi-classes",
+                "ddbi-subclasses",
+                "ddbi-class-features",
+                "ddbi-races",
+                "ddbi-racial-traits",
+                "ddbi-feats",
+                "ddbi-backgrounds",
+                "ddbi-items",
+                "ddbi-vehicles",
+                "ddbi-tables",
+                "ddbi-adventures",
+                "ddbi-override"
+              ]
+            },
+            {
+              "name": "BOVR - DND5e - Homebrew",
+              "sorting": "a",
+              "color": "#4b0082",
+              "packs": [
+                "hb-custom-class-features",
+                "hb-custom-classes",
+                "hb-custom-subclasses"
+              ]
+            },
+            {
+              "name": "BOVR - DND5e - Aetherial Expanse",
+              "sorting": "a",
+              "color": "#006080",
+              "packs": [
+                "ae-scenes",
+                "ae-npcs",
+                "ae-monsters",
+                "ae-custom-items"
+              ]
+            },
+            {
+              "name": "BOVR - DND5e - Grim Hollow",
+              "sorting": "a",
+              "color": "#2d0a0a",
+              "packs": [
+                "gh-monsters",
+                "gh-scenes",
+                "gh-npcs",
+                "gh-custom-items"
+              ]
+            }
           ]
         },
         {
-          "name": "BOVR - DND5e - Homebrew",
-          "sorting": "a",
-          "color": "#4b0082",
-          "packs": [
-            "hb-custom-class-features",
-            "hb-custom-classes",
-            "hb-custom-subclasses"
-          ]
-        },
-        {
-          "name": "BOVR - DND5e - Aetherial Expanse",
-          "sorting": "a",
-          "color": "#006080",
-          "packs": [
-            "ae-scenes",
-            "ae-npcs",
-            "ae-monsters",
-            "ae-custom-items"
-          ]
-        },
-        {
-          "name": "BOVR - Pathfinder - Kingmaker",
+          "name": "BOVR - Pathfinder",
           "sorting": "a",
           "color": "#5a3000",
-          "packs": [
-            "km-scenes",
-            "km-npcs",
-            "km-monsters",
-            "km-custom-items"
+          "folders": [
+            {
+              "name": "BOVR - Pathfinder - Kingmaker",
+              "sorting": "a",
+              "color": "#5a3000",
+              "packs": [
+                "km-scenes",
+                "km-npcs",
+                "km-monsters",
+                "km-custom-items"
+              ]
+            }
           ]
         }
       ]
@@ -352,5 +420,5 @@
   ],
   "flags": {},
   "manifest": "https://raw.githubusercontent.com/Ash10744/BOVR-Compendium/main/module.json",
-  "download": "https://github.com/Ash10744/BOVR-Compendium/releases/download/v1.0.0/BOVR-Compendium-main.zip"
+  "download": "https://github.com/Ash10744/BOVR-Compendium/releases/download/v1.0.2/BOVR-Compendium-main.zip"
 }
