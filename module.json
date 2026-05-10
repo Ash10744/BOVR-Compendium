@@ -1,0 +1,269 @@
+{
+  "id": "bovr-compendium",
+  "title": "BOVR Compendiums",
+  "description": "BOVR shared compendium module. All packs are automatically organised under the BOVR Compendiums folder tree.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "BOVR"
+    }
+  ],
+  "esmodules": [
+    "scripts/bovr-compendium.js"
+  ],
+  "packs": [
+
+    // ── BOVR - DND5E - Importer ──────────────────────────────────────────────
+    {
+      "name": "ddbi-monsters",
+      "label": "[BOVR-DDBI-DND5e] Monsters",
+      "path": "packs/ddbi-monsters",
+      "type": "Actor",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "ddbi-spells",
+      "label": "[BOVR-DDBI-DND5e] Spells",
+      "path": "packs/ddbi-spells",
+      "type": "Item",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "ddbi-classes",
+      "label": "[BOVR-DDBI-DND5e] Classes",
+      "path": "packs/ddbi-classes",
+      "type": "Item",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "ddbi-subclasses",
+      "label": "[BOVR-DDBI-DND5e] Subclasses",
+      "path": "packs/ddbi-subclasses",
+      "type": "Item",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "ddbi-class-features",
+      "label": "[BOVR-DDBI-DND5e] Class Features",
+      "path": "packs/ddbi-class-features",
+      "type": "Item",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "ddbi-races",
+      "label": "[BOVR-DDBI-DND5e] Races",
+      "path": "packs/ddbi-races",
+      "type": "Item",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "ddbi-racial-traits",
+      "label": "[BOVR-DDBI-DND5e] Racial Traits",
+      "path": "packs/ddbi-racial-traits",
+      "type": "Item",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "ddbi-feats",
+      "label": "[BOVR-DDBI-DND5e] Feats",
+      "path": "packs/ddbi-feats",
+      "type": "Item",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "ddbi-backgrounds",
+      "label": "[BOVR-DDBI-DND5e] Backgrounds",
+      "path": "packs/ddbi-backgrounds",
+      "type": "Item",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "ddbi-items",
+      "label": "[BOVR-DDBI-DND5e] Items",
+      "path": "packs/ddbi-items",
+      "type": "Item",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "ddbi-vehicles",
+      "label": "[BOVR-DDBI-DND5e] Vehicles",
+      "path": "packs/ddbi-vehicles",
+      "type": "Actor",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "ddbi-tables",
+      "label": "[BOVR-DDBI-DND5e] Tables",
+      "path": "packs/ddbi-tables",
+      "type": "RollTable",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "ddbi-adventures",
+      "label": "[BOVR-DDBI-DND5e] Adventures",
+      "path": "packs/ddbi-adventures",
+      "type": "Adventure",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "ddbi-override",
+      "label": "[BOVR-DDBI-DND5e] Override",
+      "path": "packs/ddbi-override",
+      "type": "Item",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+
+    // ── BOVR - DND5e - Homebrew ──────────────────────────────────────────────
+    {
+      "name": "hb-custom-class-features",
+      "label": "[BOVR-HB-DND5e] Custom Class Features",
+      "path": "packs/hb-custom-class-features",
+      "type": "Item",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "hb-custom-classes",
+      "label": "[BOVR-HB-DND5e] Custom Classes",
+      "path": "packs/hb-custom-classes",
+      "type": "Item",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "hb-custom-subclasses",
+      "label": "[BOVR-HB-DND5e] Custom Subclasses",
+      "path": "packs/hb-custom-subclasses",
+      "type": "Item",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+
+    // ── BOVR - DND5e - Aetherial Expanse ────────────────────────────────────
+    {
+      "name": "ae-scenes",
+      "label": "[BOVR-AE-DND5e] Scenes",
+      "path": "packs/ae-scenes",
+      "type": "Scene",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "ae-npcs",
+      "label": "[BOVR-AE-DND5e] NPCs",
+      "path": "packs/ae-npcs",
+      "type": "Actor",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "ae-monsters",
+      "label": "[BOVR-AE-DND5e] Monsters",
+      "path": "packs/ae-monsters",
+      "type": "Actor",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "ae-custom-items",
+      "label": "[BOVR-AE-DND5e] Custom Items",
+      "path": "packs/ae-custom-items",
+      "type": "Item",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+
+    // ── BOVR - Pathfinder - Kingmaker ────────────────────────────────────────
+    {
+      "name": "km-scenes",
+      "label": "[BOVR-KM-Pathfinder] Scenes",
+      "path": "packs/km-scenes",
+      "type": "Scene",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "km-npcs",
+      "label": "[BOVR-KM-Pathfinder] NPCs",
+      "path": "packs/km-npcs",
+      "type": "Actor",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "km-monsters",
+      "label": "[BOVR-KM-Pathfinder] Monsters",
+      "path": "packs/km-monsters",
+      "type": "Actor",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "km-custom-items",
+      "label": "[BOVR-KM-Pathfinder] Custom Items",
+      "path": "packs/km-custom-items",
+      "type": "Item",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    }
+
+  ],
+
+  "packFolders": [
+    {
+      "name": "BOVR Compendiums",
+      "sorting": "a",
+      "color": "#8B0000",
+      "folders": [
+        {
+          "name": "BOVR - DND5E - Importer",
+          "sorting": "a",
+          "color": "#1a3a6b",
+          "packs": [
+            "ddbi-monsters",
+            "ddbi-spells",
+            "ddbi-classes",
+            "ddbi-subclasses",
+            "ddbi-class-features",
+            "ddbi-races",
+            "ddbi-racial-traits",
+            "ddbi-feats",
+            "ddbi-backgrounds",
+            "ddbi-items",
+            "ddbi-vehicles",
+            "ddbi-tables",
+            "ddbi-adventures",
+            "ddbi-override"
+          ]
+        },
+        {
+          "name": "BOVR - DND5e - Homebrew",
+          "sorting": "a",
+          "color": "#4b0082",
+          "packs": [
+            "hb-custom-class-features",
+            "hb-custom-classes",
+            "hb-custom-subclasses"
+          ]
+        },
+        {
+          "name": "BOVR - DND5e - Aetherial Expanse",
+          "sorting": "a",
+          "color": "#006080",
+          "packs": [
+            "ae-scenes",
+            "ae-npcs",
+            "ae-monsters",
+            "ae-custom-items"
+          ]
+        },
+        {
+          "name": "BOVR - Pathfinder - Kingmaker",
+          "sorting": "a",
+          "color": "#5a3000",
+          "packs": [
+            "km-scenes",
+            "km-npcs",
+            "km-monsters",
+            "km-custom-items"
+          ]
+        }
+      ]
+    }
+  ],
+
+  "flags": {}
+}
