@@ -57,6 +57,12 @@ const FOLDER_TREE = [
     packs: ["gh-monsters", "gh-scenes", "gh-npcs", "gh-custom-items"]
   },
   {
+    name: "BOVR - DND5e - Drakkenheim",
+    color: "#3b1f4a",
+    parent: "BOVR - DND5e",
+    packs: ["dh-scenes", "dh-npcs", "dh-monsters", "dh-custom-items"]
+  },
+  {
     name: "BOVR - Pathfinder",
     color: "#5a3000",
     parent: "BOVR Compendiums",
