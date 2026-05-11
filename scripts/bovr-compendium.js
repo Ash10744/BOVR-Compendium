@@ -35,7 +35,7 @@ const FOLDER_TREE = [
       "ddbi-monsters", "ddbi-spells", "ddbi-classes", "ddbi-subclasses",
       "ddbi-class-features", "ddbi-races", "ddbi-racial-traits", "ddbi-feats",
       "ddbi-backgrounds", "ddbi-items", "ddbi-vehicles", "ddbi-tables",
-      "ddbi-adventures", "ddbi-override"
+      "ddbi-adventures", "ddbi-override", "ddbi-spell-lists", "ddbi-journals", "ddbi-summons"
     ]
   },
   {
