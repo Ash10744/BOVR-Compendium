@@ -2,7 +2,7 @@
   "id": "bovr-compendium",
   "title": "BOVR Compendiums",
   "description": "BOVR shared compendium module. All packs are automatically organised under the BOVR Compendiums folder tree.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "compatibility": {
     "minimum": "11",
     "verified": "13"
@@ -25,7 +25,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "ddbi-spells",
@@ -36,7 +38,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "ddbi-classes",
@@ -47,7 +51,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "ddbi-subclasses",
@@ -58,7 +64,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "ddbi-class-features",
@@ -69,7 +77,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "ddbi-races",
@@ -80,7 +90,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "ddbi-racial-traits",
@@ -91,7 +103,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "ddbi-feats",
@@ -102,7 +116,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "ddbi-backgrounds",
@@ -113,7 +129,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "ddbi-items",
@@ -124,7 +142,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "ddbi-vehicles",
@@ -135,7 +155,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "ddbi-tables",
@@ -145,7 +167,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "ddbi-adventures",
@@ -155,7 +179,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "ddbi-override",
@@ -166,7 +192,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "hb-custom-class-features",
@@ -177,7 +205,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "hb-custom-classes",
@@ -188,7 +218,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "hb-custom-subclasses",
@@ -199,7 +231,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "ae-scenes",
@@ -209,7 +243,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "ae-npcs",
@@ -220,7 +256,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "ae-monsters",
@@ -231,7 +269,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "ae-custom-items",
@@ -242,7 +282,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "km-scenes",
@@ -252,7 +294,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "km-npcs",
@@ -263,7 +307,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "km-monsters",
@@ -274,7 +320,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "km-custom-items",
@@ -285,7 +333,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "gh-monsters",
@@ -296,7 +346,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "gh-scenes",
@@ -306,7 +358,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "gh-npcs",
@@ -317,7 +371,9 @@
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
     },
     {
       "name": "gh-custom-items",
@@ -325,6 +381,59 @@
       "path": "packs/gh-custom-items",
       "type": "Item",
       "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "packageType": "module",
+      "packageName": "bovr-compendium"
+    },
+    {
+      "name": "dh-scenes",
+      "label": "[BOVR-DH-DND5e] Scenes",
+      "path": "packs/dh-scenes",
+      "type": "Scene",
+      "packageType": "module",
+      "packageName": "bovr-compendium",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "dh-npcs",
+      "label": "[BOVR-DH-DND5e] NPCs",
+      "path": "packs/dh-npcs",
+      "type": "Actor",
+      "system": "dnd5e",
+      "packageType": "module",
+      "packageName": "bovr-compendium",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "dh-monsters",
+      "label": "[BOVR-DH-DND5e] Monsters",
+      "path": "packs/dh-monsters",
+      "type": "Actor",
+      "system": "dnd5e",
+      "packageType": "module",
+      "packageName": "bovr-compendium",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "dh-custom-items",
+      "label": "[BOVR-DH-DND5e] Custom Items",
+      "path": "packs/dh-custom-items",
+      "type": "Item",
+      "system": "dnd5e",
+      "packageType": "module",
+      "packageName": "bovr-compendium",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
@@ -394,6 +503,17 @@
                 "gh-npcs",
                 "gh-custom-items"
               ]
+            },
+            {
+              "name": "BOVR - DND5e - Drakkenheim",
+              "sorting": "a",
+              "color": "#3b1f4a",
+              "packs": [
+                "dh-scenes",
+                "dh-npcs",
+                "dh-monsters",
+                "dh-custom-items"
+              ]
             }
           ]
         },
@@ -420,5 +540,5 @@
   ],
   "flags": {},
   "manifest": "https://raw.githubusercontent.com/Ash10744/BOVR-Compendium/main/module.json",
-  "download": "https://github.com/Ash10744/BOVR-Compendium/releases/download/v1.0.2/BOVR-Compendium-main.zip"
+  "download": "https://github.com/Ash10744/BOVR-Compendium/releases/download/v1.0.3/BOVR-Compendium-main.zip"
 }
